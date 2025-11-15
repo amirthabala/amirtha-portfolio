@@ -26,7 +26,7 @@
 }
 
 /* For Mobile screens */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .skillBox {
     width: calc(50% - 16px);
   }

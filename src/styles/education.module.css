@@ -78,7 +78,7 @@
 }
 
 /* For Mobile screens */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   .educationContainer::before,
   .educationCard::before {
     content: none;
