@@ -5,8 +5,7 @@
 }
 
 .containerWrapper {
-  border-bottom-left-radius: 120px;
-  @apply !pb-[80px] flex gap-[80px] bg-white;
+  @apply !pb-[80px] flex gap-[48px] bg-white flex-wrap rounded-bl-[60px] sm:gap-[80px] sm:flex-nowrap sm:rounded-bl-[120px];
 }
 
 .socialIconsBox {

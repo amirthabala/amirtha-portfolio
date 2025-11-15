@@ -3,8 +3,16 @@
 import Image from "next/image";
 import style from "../styles/heroImage.module.css";
 
-const HeroImage = ({ isShrink }: { isShrink: boolean }) => {
-  return (
+const HeroImage = ({
+  isMobile,
+  isShrink,
+}: {
+  isMobile: boolean;
+  isShrink: boolean;
+}) => {
+  return isMobile ? (
+    <div className="h-4" id="about" />
+  ) : (
     <div className={isShrink ? style.shrink : style.grow} id="about">
       <div className={style.imgContainer}>
         <Image

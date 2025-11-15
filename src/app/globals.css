@@ -59,12 +59,12 @@ body {
 }
 
 .container {
-  @apply px-[12%] py-[20px] max-w-full;
+  @apply px-5 py-[20px] max-w-full sm:px-[12%];
 }
 
 .heading {
   color: var(--color-p2);
-  @apply text-6xl font-bold mb-[80px];
+  @apply text-4xl font-bold mb-[48px] sm:text-6xl sm:mb-[80px];
 }
 
 .sprite {

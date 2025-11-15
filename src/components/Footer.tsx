@@ -9,11 +9,11 @@ const Footer = ({
 }) => {
   return (
     <div
-      className="container !py-[96px] bg-secondary-dark text-white"
+      className="container !py-[64px] bg-secondary-dark text-white sm:!py-[96px]"
       id="contact"
     >
-      <div className="flex gap-[80px] mb-[64px]">
-        <div className="w-[65%]">
+      <div className="flex flex-wrap gap-[48px] mb-[64px] sm:flex-nowrap sm:gap-[50px]">
+        <div className="w-full sm:w-[65%]">
           <h5 className="mb-8 text-lg font-bold py-5 border border-transparent border-y-white">
             GET IN TOUCH
           </h5>
@@ -27,7 +27,7 @@ const Footer = ({
             )}
           </div>
         </div>
-        <div className="w-[35%]">
+        <div className="w-full sm:w-[35%]">
           <h5 className="mb-8 text-lg font-bold py-5 border border-transparent border-y-white">
             EXPLORE
           </h5>
@@ -44,7 +44,7 @@ const Footer = ({
           </div>
         </div>
       </div>
-      <div className="pt-5 border border-transparent border-t-white flex items-center justify-between">
+      <div className="pt-5 border border-transparent border-t-white flex flex-col items-start gap-2 justify-between sm:flex-row sm:items-center sm:gap-0">
         <a href="tel:+917904934040" className="flex items-center gap-1">
           <span className="sprite cell" />
           +91 7904934040

@@ -5,9 +5,7 @@
 }
 
 .containerWrapper {
-  border-top-right-radius: 120px;
-  border-bottom-left-radius: 120px;
-  @apply !py-[72px] bg-white;
+  @apply !py-[64px] rounded-tr-[60px] rounded-bl-[60px] bg-white sm:!py-[72px] sm:rounded-tr-[120px] sm:rounded-bl-[120px];
 }
 
 .subHeading {
@@ -25,4 +23,11 @@
   border: 1px solid var(--bg-color-p4);
   border-radius: 8px;
   @apply p-4 flex-grow flex flex-col items-center justify-center gap-4 text-center;
+}
+
+/* For Mobile screens */
+@media only screen and (max-width: 480px) {
+  .skillBox {
+    width: calc(50% - 16px);
+  }
 }

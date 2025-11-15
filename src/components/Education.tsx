@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className={style.wrapper}>
       <h2 className="heading text-center">Education</h2>
-      <div className="container flex flex-col flex-wrap">
+      <div className="container !py-0 flex flex-col flex-wrap gap-4 sm:gap-0">
         {educationData.map(
           (education: {
             institution: string;

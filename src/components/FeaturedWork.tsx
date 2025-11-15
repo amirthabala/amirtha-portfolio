@@ -26,7 +26,7 @@ const FeaturedWork = () => {
                     className="rounded-md aspect-576/360 hover:scale-[1.02]"
                   />
                 </div>
-                <h2 className="mb-3 text-secondary text-3xl font-bold">
+                <h2 className="mb-3 text-secondary text-2xl font-bold sm:text-3xl">
                   {work.title}
                 </h2>
                 <p className="text-primary">{work.description}</p>

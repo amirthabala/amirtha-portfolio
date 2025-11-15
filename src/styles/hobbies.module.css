@@ -5,6 +5,5 @@
 }
 
 .containerWrapper {
-  border-bottom-left-radius: 120px;
-  @apply !py-[96px] bg-white;
+  @apply !py-[64px] rounded-bl-[60px] bg-white sm:!py-[96px] sm:rounded-bl-[120px];
 }

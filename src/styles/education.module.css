@@ -7,7 +7,8 @@
     var(--bg-color-p4) 100%
   );
   padding: 96px 0;
-  border-top-right-radius: 120px;
+
+  @apply py-[64px] rounded-tr-[60px] sm:py-[96px] sm:rounded-tr-[120px];
 }
 
 .educationContainer {
@@ -74,4 +75,24 @@
 
 .educationContainer:nth-child(odd) .educationTime {
   flex-direction: row-reverse;
+}
+
+/* For Mobile screens */
+@media only screen and (max-width: 480px) {
+  .educationContainer::before,
+  .educationCard::before {
+    content: none;
+  }
+
+  .educationItem {
+    @apply w-full me-0 justify-center text-start h-auto px-5;
+  }
+
+  .educationContainer:nth-child(even) .educationItem {
+    margin-left: 0;
+  }
+
+  .educationContainer:nth-child(even) .educationTime {
+    flex-direction: row-reverse;
+  }
 }

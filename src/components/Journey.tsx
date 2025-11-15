@@ -5,9 +5,9 @@ const Journey = () => {
   return (
     <div className={style.containerBg}>
       <div className={`container ${style.containerWrapper}`}>
-        <h2 className="heading">Journey</h2>
-        <div className="flex gap-12">
-          <div className="w-[60%]">
+        <h2 className="heading text-center sm:text-start">Journey</h2>
+        <div className="flex gap-0 flex-wrap sm:gap-12 sm:flex-nowrap">
+          <div className="w-full sm:w-[60%]">
             <h4 className={style.subHeading}>Experience</h4>
             <div>
               {experienceData.map(
@@ -22,10 +22,10 @@ const Journey = () => {
                     key={`${exp.company}-${exp.role}`}
                     className={style.experienceBox}
                   >
-                    <h3 className="text-secondary text-[32px] font-bold">
+                    <h3 className="text-secondary text-2xl font-bold sm:text-[32px]">
                       {exp.company}
                     </h3>
-                    <div className="flex items-center justify-between text-primary text-xl font-bold">
+                    <div className="flex items-center justify-between text-primary text-lg font-bold sm:text-xl">
                       <p>{exp.role}</p>
                       <p className="text-lg">{exp.timeline}</p>
                     </div>
@@ -46,7 +46,7 @@ const Journey = () => {
               )}
             </div>
           </div>
-          <div className="w-[40%]">
+          <div className="w-full sm:w-[40%]">
             <h4 className={style.subHeading}>Skill Set</h4>
             <div className="flex flex-wrap gap-4">
               {skillsData.map((skill: { name: string; icon: string }) => (
